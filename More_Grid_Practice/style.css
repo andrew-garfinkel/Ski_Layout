@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* global elements styling */
+
+ul{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  /* width: 50%; */
+  display: inline-block;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+a:hover{
+  opacity: 0.6;
+  /* opacity: 1; */
+  /* transform: translateY(8px); */
+}
+
+
+/* hero */
+#hero{
+  position: relative;
+}
+
+.browse-resorts{
+  padding: 1rem;
+  margin: 0.75rem;
+  position: absolute;
+  top: 0;
+}
+
+#hero-grid{
+  background: url('https://images.unsplash.com/photo-1511608010928-2ef806fd3773?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTh8fHNraXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60') bottom;
+  /* background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center; */
+  background-size: cover;
+  padding: 7.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* align-items: center; */
+  /* justify-items: center;
+  align-items: center; */
+  color: white;
+}
+
+#hero-grid h1{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  opacity: 0.8;
+  color: #e2e2e2;
+}
+
+#hero-grid p{
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.9;
+  color: aquamarine;
+}
+
+#hero-grid > article > a{
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+
+/* resorts */
+.resorts{
+  padding: 2rem;
+}
+
+.resorts > ul > li{
+  border: 1px solid #e2e2e2;
+  position: relative;
+}
+
+.resorts > ul{
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+
+
+.resorts > ul > li > figure{
+  max-height: 220px;
+  /* min-height: 100px; */
+  overflow: hidden;
+  /* border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem; */
+  position: relative;
+}
+
+figcaption{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+figcaption > h3{
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.resorts > ul > li > p{
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0.75rem;
+}
+
+.resorts > ul > li > a{
+  padding: 0.5rem 1rem;
+  /* margin: 1rem; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
